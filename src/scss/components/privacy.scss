@@ -1,45 +1,30 @@
 .policy-section {
-  padding-bottom: 80px;
+  background: #f8f9fa;
+  padding-top: 140px;
+  padding-bottom: 32px;
 
   @include media(desktop) {
-    padding-bottom: 100px;
-  }
-}
-
-.policy-title-wrapper {
-  background: #5f31d1;
-  padding-top: 136px;
-  padding-bottom: 64px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-bottom: 64px;
-
-  @include media(desktop) {
-    padding-top: 176px;
-    padding-left: 72px;
-    padding-right: 72px;
-    margin-bottom: 96px;
   }
 }
 
 .policy-section h1 {
-  font-family: 'Titan One', sans-serif;
-  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
   font-size: 40px;
-  line-height: 1.3;
-  text-align: center;
-  color: #fff;
+  line-height: 1.2;
+  color: #1a1a1a;
+  margin-bottom: 16px;
 
   @include media(desktop) {
   }
 }
 
 .policy-section h2 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 1;
-  color: #141414;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.27273;
+  color: #1a1a1a;
   margin-bottom: 16px;
 
   @include media(desktop) {
@@ -47,48 +32,47 @@
 }
 
 .policy-section h3 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 1;
-  color: #141414;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.27273;
+  color: #1a1a1a;
   margin-bottom: 16px;
-  word-break: break-all;
 
   @include media(desktop) {
   }
 }
 
 .policy-section h4 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 1;
-  color: #141414;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.27273;
+  color: #1a1a1a;
   margin-bottom: 16px;
-  word-break: break-all;
 
   @include media(desktop) {
   }
 }
 
 .policy-section p {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  color: #141414;
+  line-height: 1.625;
+  color: #2d2d2d;
   margin-bottom: 16px;
 
   @include media(desktop) {
   }
 }
+
 .policy-section li {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  color: #141414;
+  line-height: 1.625;
+  color: #2d2d2d;
   margin-bottom: 16px;
 
   @include media(desktop) {

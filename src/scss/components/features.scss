@@ -4,15 +4,15 @@
 }
 
 .features-section-wrapper {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     max-width: 1440px;
   }
 }
@@ -25,12 +25,13 @@
 .features-content-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
 
   @include media(desktop) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 84px;
   }
 }
 
@@ -39,14 +40,14 @@
   margin-right: auto;
 
   @include media(desktop) {
-    min-width: 498px;
+    min-width: 454px;
     margin: 0;
   }
 }
 
 .features-text-wrapper {
   @include media(desktop) {
-    max-width: 636px;
+    max-width: 500px;
   }
 }
 
@@ -55,21 +56,13 @@
   }
 }
 
-.features-text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-  @include media(desktop) {
-  }
-}
-
 .features-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #141414;
+  color: #171a32;
+  margin-bottom: 32px;
 
   @include media(desktop) {
   }
@@ -77,33 +70,37 @@
 
 .features-list {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  max-width: 311px;
-  margin-left: auto;
-  margin-right: auto;
+  flex-wrap: wrap;
+  gap: 24px;
 
   @include media(desktop) {
-    max-width: 604px;
   }
 }
 
 .features-list-item {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 8px;
+  width: 100%;
+  max-width: 159px;
 
   @include media(desktop) {
+    padding-bottom: 21px;
+    align-items: start;
+    max-width: 238px;
   }
 }
 
-.features-item-circle {
-  background: #4316ab;
-  border-radius: 100%;
-  min-width: 8px;
-  width: 8px;
-  height: 8px;
-  margin-top: 8px;
+.features-item-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #171a32;
 
   @include media(desktop) {
+    text-align: left;
   }
 }

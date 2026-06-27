@@ -4,38 +4,64 @@
 }
 
 .gameplay-section-wrapper {
-  padding-top: 64px;
-  padding-bottom: 112px;
+  padding-top: 48px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/gameplay/gameplay-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: auto;
 
   @include media(desktop) {
-    padding-top: 96px;
-    padding-bottom: 144px;
+    padding-top: 100px;
     max-width: 1440px;
-    background-image: url(../img/gameplay/gameplay-bg-desk.png);
   }
 }
 
 .gameplay-container {
+  padding: 0;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-title-wrapper {
+  padding: 0 16px;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    padding: 0 72px;
+  }
+}
+
+.gameplay-title {
+  text-align: center;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-top-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #171a32;
+
   @include media(desktop) {
   }
 }
 
 .gameplay-content-wrapper {
+  padding: 0 16px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 18px;
 
   @include media(desktop) {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0 72px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 32px;
   }
 }
 
@@ -44,71 +70,69 @@
   margin-right: auto;
 
   @include media(desktop) {
-    min-width: 526px;
+    min-width: 502px;
     margin: 0;
   }
 }
 
-.gameplay-text-wrapper {
-  @include media(desktop) {
-    max-width: 635px;
-  }
-}
-
-.gameplay-title {
-  @include media(desktop) {
-  }
-}
-
-.gameplay-text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-  @include media(desktop) {
-  }
-}
-
-.gameplay-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #141414;
-
-  @include media(desktop) {
-  }
-}
-
 .gameplay-list {
+  background: #004576;
+  border-radius: 8px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  max-width: 310px;
-  margin-left: auto;
-  margin-right: auto;
+  gap: 8px;
 
   @include media(desktop) {
-    max-width: 603px;
+    justify-content: center;
+    max-width: 336px;
   }
 }
 
 .gameplay-list-item {
   display: flex;
+  align-items: center;
   gap: 8px;
 
   @include media(desktop) {
   }
 }
 
-.gameplay-item-circle {
-  background: #4316ab;
-  border-radius: 100%;
-  min-width: 8px;
-  width: 8px;
-  height: 8px;
-  margin-top: 8px;
+.gameplay-item-img {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-item-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #d1e4fb;
 
   @include media(desktop) {
+  }
+}
+
+.gameplay-bottom-text {
+  background: #fff200;
+  border: 2px dashed #ffa841;
+  padding: 46px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #171a32;
+  margin-top: 32px;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-text-br {
+  @include media(desktop) {
+    display: none;
   }
 }

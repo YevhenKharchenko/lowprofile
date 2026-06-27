@@ -4,18 +4,44 @@
 }
 
 .about-section-wrapper {
-  padding-top: 64px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    padding-top: 96px;
+    padding-top: 97px;
+    padding-bottom: 97px;
     max-width: 1440px;
   }
 }
 
 .about-container {
+  padding: 0;
+
+  @include media(desktop) {
+    padding: 0 72px;
+  }
+}
+
+.about-title-wrapper {
+  padding: 0 16px;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    padding: 0;
+    margin-bottom: 56px;
+  }
+}
+
+.about-top-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #171a32;
+
   @include media(desktop) {
   }
 }
@@ -23,7 +49,7 @@
 .about-content-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
 
   @include media(desktop) {
     flex-direction: row;
@@ -37,38 +63,69 @@
   margin-right: auto;
 
   @include media(desktop) {
-    min-width: 526px;
+    min-width: 682px;
     margin: 0;
   }
 }
 
-.about-text-wrapper {
+.about-list {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
   @include media(desktop) {
-    max-width: 635px;
+    padding: 0;
+    gap: 32px;
+    max-width: 429px;
   }
 }
 
-.about-title {
-  @include media(desktop) {
-  }
-}
-
-.about-text-container {
+.about-list-item {
+  background: #44b7d1;
+  border-radius: 8px;
+  padding: 32px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 
   @include media(desktop) {
+    min-height: 214px;
   }
 }
 
-.about-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+.about-item-img {
+  @include media(desktop) {
+  }
+}
+
+.about-item-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #141414;
+  color: #171a32;
 
   @include media(desktop) {
+  }
+}
+
+.about-bottom-text {
+  padding: 0 16px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #171a32;
+  margin-top: 32px;
+
+  @include media(desktop) {
+    padding: 0;
+    max-width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 56px;
   }
 }

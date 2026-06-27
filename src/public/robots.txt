@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://outerthread.site/sitemap.xml
+Sitemap: https://lowprofile.site/sitemap.xml

@@ -1,17 +1,18 @@
 .cta-section {
-  background: #5f31d1;
-
   @include media(desktop) {
   }
 }
 
 .cta-bg-wrapper {
-  padding-top: 64px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
+    padding-top: 100px;
+    padding-bottom: 100px;
     max-width: 1440px;
   }
 }
@@ -22,81 +23,76 @@
 }
 
 .cta-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-
   @include media(desktop) {
-    flex-direction: row;
-    align-items: end;
-    justify-content: space-between;
-    width: 100%;
   }
 }
 
-.cta-text-wrapper {
+.cta-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+
   @include media(desktop) {
-    width: 100%;
-    max-width: 526px;
-    margin-bottom: 64px;
   }
 }
 
 .cta-title {
-  color: #fff;
-
-  @include media(desktop) {
-  }
-}
-
-.cta-text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  text-align: center;
+  margin-bottom: 32px;
 
   @include media(desktop) {
   }
 }
 
 .cta-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #fff;
+  text-align: center;
+  color: #171a32;
+  margin-bottom: 32px;
 
   @include media(desktop) {
-  }
-}
-
-.cta-img-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-
-  @include media(desktop) {
-    width: 100%;
-    max-width: 636px;
+    max-width: 675px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .cta-link {
-  background: #fff;
+  background: #6c0;
   border-radius: 8px;
-  padding: 12px 24px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  padding: 16px 28px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 1.5;
-  color: #141414;
-  max-width: max-content;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #171a32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
 
   @include media(desktop) {
+    padding: 16px 40px;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-.cta-img {
+.cta-bottom-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #171a32;
+
   @include media(desktop) {
   }
 }
