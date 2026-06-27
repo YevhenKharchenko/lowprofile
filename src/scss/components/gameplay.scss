@@ -1,0 +1,114 @@
+.gameplay-section {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-section-wrapper {
+  padding-top: 64px;
+  padding-bottom: 112px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/gameplay/gameplay-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 96px;
+    padding-bottom: 144px;
+    max-width: 1440px;
+    background-image: url(../img/gameplay/gameplay-bg-desk.png);
+  }
+}
+
+.gameplay-container {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include media(desktop) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.gameplay-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    min-width: 526px;
+    margin: 0;
+  }
+}
+
+.gameplay-text-wrapper {
+  @include media(desktop) {
+    max-width: 635px;
+  }
+}
+
+.gameplay-title {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #141414;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 310px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 603px;
+  }
+}
+
+.gameplay-list-item {
+  display: flex;
+  gap: 8px;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-item-circle {
+  background: #4316ab;
+  border-radius: 100%;
+  min-width: 8px;
+  width: 8px;
+  height: 8px;
+  margin-top: 8px;
+
+  @include media(desktop) {
+  }
+}
